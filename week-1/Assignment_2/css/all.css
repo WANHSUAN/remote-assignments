@@ -141,13 +141,14 @@ main {
 
   .menu {
     margin-top: 5px;
+
   }
 
   .menu a {
     text-align: center;
     display: block;
-    padding: 0 10px;
-    margin-left: 20px;
+    padding: 0 25px;
+    margin: 0 auto;
   }
 }
 
@@ -189,7 +190,7 @@ main {
   .menu a {
     text-align: center;
     display: block;
-    padding: 0 10px;
-    margin-left: 20px;
+    padding: 0 25px;
+    margin: 0 auto;
   }
 }
