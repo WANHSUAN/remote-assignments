@@ -48,11 +48,14 @@ nav {
   background-color: rgb(196, 222, 238);
   padding: 100px;
   text-align: center;
+}
+
+.welcome h1 {
   font-size: 1.75rem;
 }
 
 main {
-    text-align: center;
+  text-align: center;
 }
 
 .section-title h2 {
@@ -118,10 +121,6 @@ main {
     display: none;
   }
 
-  .welcome {
-    font-size: 2rem;
-  }
-
   nav,
   .menu,
   .row {
@@ -150,7 +149,6 @@ main {
     padding: 0 10px;
     margin-left: 20px;
   }
-
 }
 
 
@@ -164,10 +162,6 @@ main {
 
   .fa-bars {
     display: none;
-  }
-
-  .welcome {
-    font-size: 2rem;
   }
 
   nav,
@@ -198,5 +192,4 @@ main {
     padding: 0 10px;
     margin-left: 20px;
   }
-
 }
