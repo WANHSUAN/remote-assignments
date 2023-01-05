@@ -21,7 +21,8 @@ header {
 }
 
 .big-title {
-  font-size: 1.25rem;
+  margin-top: 5px;
+  font-size: 1rem;
 }
 
 nav,
@@ -56,6 +57,7 @@ main {
 
 .section-title h2 {
   padding: 30px;
+  font-size: 1.25rem;
 }
 
 .row {
@@ -112,8 +114,12 @@ main {
 
 @media screen and (min-width: 800px) and (max-width: 1199px){
   
-    .fa-bars {
+  .fa-bars {
     display: none;
+  }
+
+  .welcome {
+    font-size: 2rem;
   }
 
   nav,
@@ -158,6 +164,10 @@ main {
 
   .fa-bars {
     display: none;
+  }
+
+  .welcome {
+    font-size: 2rem;
   }
 
   nav,
