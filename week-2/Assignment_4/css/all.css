@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Serif', serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul li {
+  list-style: none;
+}
+
+header {
+  background-color: rgb(238, 235, 235);
+  padding: 20px;
+
+}
+
+.big-title {
+  margin-top: 5px;
+  font-size: 1rem;
+}
+
+nav,
+.menu,
+.row {
+  display: flex;
+}
+
+nav {
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.menu {
+    display: none;
+}
+
+.fa-bars {
+  font-size: 1.5rem;
+}
+
+.welcome {
+  background-color: rgb(196, 222, 238);
+  padding: 100px;
+  text-align: center;
+}
+
+.welcome h1 {
+  font-size: 1.75rem;
+}
+
+main {
+  text-align: center;
+}
+
+.section-title h2 {
+  padding: 30px;
+  font-size: 1.25rem;
+}
+
+.row {
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.col {
+  background-color: rgb(119, 141, 153);
+  height: 180px;
+  margin: 0 20px 20px;
+}
+
+.col p {
+  padding: 10px;
+}
+
+.btn {
+  background-color: rgb(204, 234, 253);
+  padding: 10px;
+  width: 150px;
+  margin: 0 auto 20px;
+}
+
+
+@media screen and (min-width: 500px) and (max-width: 799px){
+    
+  nav,
+  .menu,
+  .row {
+    display: flex;
+  }
+
+  .row {
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .col {
+    height: 180px;
+    width: 45%;
+    margin: 0 10px 20px;
+  }   
+
+  .menu {
+    display: none;
+  }
+
+}
+
+
+
+@media screen and (min-width: 800px) and (max-width: 1199px){
+  
+  .fa-bars {
+    display: none;
+  }
+
+  nav,
+  .menu,
+  .row {
+    display: flex;
+  }
+    
+  .row {
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .col {
+    height: 180px;
+    width: 45%;
+    margin: 0 10px 20px;
+  }  
+
+  .menu {
+    margin-top: 5px;
+
+  }
+
+  .menu a {
+    text-align: center;
+    display: block;
+    padding: 0 25px;
+    margin: 0 auto;
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+  
+  .section-title {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .fa-bars {
+    display: none;
+  }
+
+  nav,
+  .menu,
+  .row {
+    display: flex;
+  }
+    
+  .row {
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .col {
+    height: 180px;
+    width: 45%;
+    margin: 0 10px 20px;
+  }
+
+  .menu {
+    margin-top: 5px;
+  }
+
+  .menu a {
+    text-align: center;
+    display: block;
+    padding: 0 25px;
+    margin: 0 auto;
+  }
+}
