@@ -49,7 +49,7 @@ nav,
 
 .google-icon {
   width: 65.5%;
-  margin: 10px 0;
+  margin: 10px 0 9px;
   
 }
 
@@ -91,20 +91,25 @@ nav {
 /* main */
 
 .clear {
-  height: 90px;
+  height: 48px;
 }
-
-
-
 
 /* main-header */
 
 .main-header {
   flex-direction: column-reverse;
+  background-color: rgb(14, 116, 211);
 
 }
 
 .main-header-col img {
   width: 82.5%;
   border-radius: 0.6rem;
+  
 }
+
+
+.main-header-col h1, p {
+  color: white;
+}
+
