@@ -1,6 +1,13 @@
 function calculate(data) {
-  
+    let sum = 0;
+    let products = data.products;
+    let discount = data.discount;
+    for(let i = 0; i < products.length; i++) {
+      sum += discount * products[i].price;
+    }
+    return sum;
 }
+
 const discountedPrice = calculate({
   discount: 0.1, 
   products: [
@@ -19,6 +26,15 @@ const discountedPrice = calculate({
   ]
 });
 console.log(discountedPrice); // show the total price of all products after applying a discount
+
+
+
+
+
+
+
+
+
 
 
 // 適用折扣後，完成功能，計算所有產品的總價格。
