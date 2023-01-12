@@ -5,6 +5,10 @@
   font-family: 'IBM Plex Serif', serif;
 }
 
+.container {
+  position: relative;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -13,6 +17,19 @@ a {
 ul li {
   list-style: none;
 }
+
+
+/* flex */
+
+nav,
+.menu,
+.row,
+.sideMenu {
+  display: flex;
+}
+
+
+/* navbar */
 
 header {
   background-color: rgb(238, 235, 235);
@@ -25,24 +42,70 @@ header {
   font-size: 1rem;
 }
 
-nav,
-.menu,
-.row {
-  display: flex;
-}
-
 nav {
   justify-content: space-between;
   padding: 0 20px;
 }
 
 .menu {
-    display: none;
+  display: none;
 }
 
 .fa-bars {
   font-size: 1.5rem;
 }
+
+/* column-menu */
+
+.sideMenu {
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  right: 0;
+  top: 0;
+  display: none;
+  animation: fade-in ease 1s;
+}
+
+  
+.column-menu li {
+  display: block;
+  padding: 25px;
+  margin: 0 auto;
+}
+  
+.menuButton {
+  height: 5%;
+  font-size: 1.5rem;
+  padding: 5px;
+  margin: 5px;
+  background-color:white;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+  
+.fa-x:hover {
+  color:rgb(119, 141, 153);
+}
+
+/* fade in animation */
+
+@keyframes fade-in {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+
+/* welcome part */
 
 .welcome {
   background-color: rgb(196, 222, 238);
@@ -53,6 +116,10 @@ nav {
 .welcome h1 {
   font-size: 1.75rem;
 }
+
+
+/* main part */
+
 
 main {
   text-align: center;
@@ -144,7 +211,7 @@ main {
 
   }
 
-  .menu a {
+  .menu li {
     text-align: center;
     display: block;
     padding: 0 25px;
@@ -187,7 +254,7 @@ main {
     margin-top: 5px;
   }
 
-  .menu a {
+  .menu li {
     text-align: center;
     display: block;
     padding: 0 25px;
