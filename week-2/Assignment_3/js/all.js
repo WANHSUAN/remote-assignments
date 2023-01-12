@@ -3,7 +3,7 @@ function calculate(data) {
     let products = data.products;
     let discount = data.discount;
     for(let i = 0; i < products.length; i++) {
-      sum += discount * products[i].price;
+      sum += (1 - discount) * products[i].price;
     }
     return sum;
 }
