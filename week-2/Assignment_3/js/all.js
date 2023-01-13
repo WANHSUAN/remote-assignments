@@ -1,7 +1,7 @@
 function calculate(data) {
     let sum = 0;
-    let products = data.products;
-    let discount = data.discount;
+    const products = data.products;
+    const discount = data.discount;
     for(let i = 0; i < products.length; i++) {
       sum += (1 - discount) * products[i].price;
     }
