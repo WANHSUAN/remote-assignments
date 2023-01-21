@@ -1,0 +1,8 @@
+extends layout.pug 
+
+block content 
+  h2 You  enter a number: #{number} 
+  form(action="/hello", method="post")
+    label Please enter a number: 
+     input(type="text", name="number")
+    button(type="submit") Submit

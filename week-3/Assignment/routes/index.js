@@ -5,4 +5,12 @@ router.get("/", (req, res) => {
   res.render("index");
 });
 
+router.get("/hello", (req, res) => {
+  res.render("helloData");
+});
+
+router.post("/hello", (req, res) => {
+  res.render("helloData", { number: req.body.number });
+});
+
 module.exports = router;
