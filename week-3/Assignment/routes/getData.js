@@ -2,13 +2,14 @@ const express = require("express");
 const router = express.Router();
 
 router.get("/", (req, res) => {
-  let number = req.query.number;
   let count;
-
-  if (isNaN(number)) {
-    count = "<h1>Wrong Parameter</h1>";
+  let { number } = req.query;
+  if (!number) {
+    count = "Lake of Parameter";
+  } else if (isNaN(number)) {
+    count = "Wrong Parameter";
   } else {
-    count = `<h1>${caculate(number).toString()}</h1>`;
+    count = caculate(number).toString();
   }
 
   function caculate(n) {
@@ -19,7 +20,8 @@ router.get("/", (req, res) => {
     return sum;
   }
 
-  res.send(count);
+  const templateData = { count };
+  res.render("getData", templateData);
 });
 
 module.exports = router;
