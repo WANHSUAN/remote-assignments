@@ -21,7 +21,14 @@ router.get("/", (req, res) => {
   }
 
   const templateData = { count };
+  res.cookie("number", count);
   res.render("getData", templateData);
 });
+
+
+router.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "static-html-sum.html"));
+});
+
 
 module.exports = router;
