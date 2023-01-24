@@ -20,15 +20,7 @@ router.get("/", (req, res) => {
     return sum;
   }
 
-  const templateData = { count };
-  res.cookie("number", count);
-  res.render("getData", templateData);
+  res.send(`<h3>${count}</h3>`);
 });
-
-
-router.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "static-html-sum.html"));
-});
-
 
 module.exports = router;

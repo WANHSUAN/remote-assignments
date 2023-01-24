@@ -1,0 +1,12 @@
+extends layout.pug 
+
+block content 
+  if name
+    h2 Your Number: #{name}
+  else
+    form(action="/myNumber", method="post")
+      label Please enter your number: 
+      br
+      input(type="text", name="number")
+      br
+      button(type="submit") Submit

@@ -1,15 +1,12 @@
+function fetchData(url) {
+  const answer = document.getElementById("answer");
+  const text = document.getElementById("input").value;
 
-function getCookie() {
-    let cookies = document.cookie;
-    let cookiesNumber = cookies.split("=");
-    let cookiesAnswer = cookiesNumber[1].replaceAll("%20", " ");
-    console.log(cookiesAnswer);
-    const answer = document.getElementById("answer");
-    answer.innerHTML = `
-    <h1>Answer: ${cookiesAnswer}</h1>
-    `;
+  fetch(`/getData/?number=${text}`)
+    .then((res) => res.text())
+    .then((res) => {
+      answer.innerHTML = `Answer: ${res}`;
+    });
 }
-
-getCookie();
 
 

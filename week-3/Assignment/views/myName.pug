@@ -1,0 +1,12 @@
+extends layout.pug 
+
+block content 
+    if name 
+      h1 Your Name: #{name}
+    else
+      form(action="/trackName", method="POST")
+        label Please enter your name: 
+        br
+        input(type="text", name="username" id="username")
+        br
+        button(type="submit" id="submit") Submit
