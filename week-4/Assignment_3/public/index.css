@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Serif", serif;
+}
+
+.container {
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul li {
+  list-style: none;
+}
+
+/* flex */
+
+nav,
+.menu,
+.row,
+.sideMenu {
+  display: flex;
+}
+
+/* navbar */
+
+header {
+  background-color: rgb(238, 235, 235);
+  padding: 20px;
+}
+
+.big-title {
+  margin-top: 5px;
+  font-size: 1rem;
+}
+
+nav {
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.menu {
+  display: none;
+}
+
+.fa-bars {
+  font-size: 1.5rem;
+}
+
+/* column-menu */
+
+.sideMenu {
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  right: 0;
+  top: 0;
+  /* display: none; */
+  animation: fade-in ease 1s;
+}
+
+.column-menu li {
+  display: block;
+  padding: 25px;
+  margin: 0 auto;
+}
+
+.menuButton {
+  height: 5%;
+  font-size: 1.5rem;
+  padding: 5px;
+  margin: 5px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.fa-x:hover {
+  color: rgb(119, 141, 153);
+}
+
+/* fade in animation */
+
+@keyframes fade-in {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* welcome part */
+
+.welcome {
+  background-color: rgb(196, 222, 238);
+  padding: 100px;
+  text-align: center;
+}
+
+.welcome h1 {
+  font-size: 1.75rem;
+}
+
+/* main part */
+
+main {
+  text-align: center;
+}
+
+.section-title h2 {
+  padding: 30px;
+  font-size: 1.25rem;
+}
+
+.row {
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* .row:nth-child(4) {
+    display: none;
+  } */
+
+.col {
+  background-color: rgb(119, 141, 153);
+  height: 180px;
+  margin: 0 20px 20px;
+}
+
+.col p {
+  padding: 10px;
+}
+
+.btn {
+  background-color: rgb(204, 234, 253);
+  padding: 10px;
+  width: 150px;
+  margin: 0 auto 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(79, 145, 185);
+  color: white;
+}
+
+@media screen and (min-width: 500px) and (max-width: 799px) {
+  nav,
+  .menu,
+  .row {
+    display: flex;
+  }
+
+  .row {
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .col {
+    height: 180px;
+    width: 45%;
+    margin: 0 10px 20px;
+  }
+
+  .menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1199px) {
+  .fa-bars {
+    display: none;
+  }
+
+  nav,
+  .menu,
+  .row {
+    display: flex;
+  }
+
+  .row {
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .col {
+    height: 180px;
+    width: 45%;
+    margin: 0 10px 20px;
+  }
+
+  .menu {
+    margin-top: 5px;
+  }
+
+  .menu li {
+    text-align: center;
+    display: block;
+    padding: 0 25px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-title {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .fa-bars {
+    display: none;
+  }
+
+  nav,
+  .menu,
+  .row {
+    display: flex;
+  }
+
+  .row {
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .col {
+    height: 180px;
+    width: 45%;
+    margin: 0 10px 20px;
+  }
+
+  .menu {
+    margin-top: 5px;
+  }
+
+  .menu li {
+    text-align: center;
+    display: block;
+    padding: 0 25px;
+    margin: 0 auto;
+  }
+}
