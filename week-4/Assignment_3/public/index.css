@@ -52,6 +52,12 @@ nav {
   font-size: 1.5rem;
 }
 
+.fa-bars:hover,
+.fa-x:hover,
+.welcome h1:hover {
+  color: rgb(119, 141, 153);
+}
+
 /* column-menu */
 
 .sideMenu {
@@ -85,10 +91,6 @@ nav {
   right: 0;
 }
 
-.fa-x:hover {
-  color: rgb(119, 141, 153);
-}
-
 /* fade in animation */
 
 @keyframes fade-in {
@@ -106,6 +108,7 @@ nav {
   background-color: rgb(196, 222, 238);
   padding: 100px;
   text-align: center;
+  cursor: pointer;
 }
 
 .welcome h1 {
