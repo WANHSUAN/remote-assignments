@@ -1,9 +1,11 @@
 function ajax(url) {
   // your code here
 
-  fetch(url)
-    .then((data) => data.json())
-    .then((data) => render(data));
+  return fetch(url)
+    .then((res) => res.json())
+    .then((data) => {
+      return data;
+    });
 }
 
 function render(data) {
@@ -34,6 +36,7 @@ function render(data) {
 
 const url = "https://appworks-school.github.io/Remote-Assignment-Data/products";
 
-ajax(url).then((data) => {
+ajax(url)
+  .then((data) => {
   render(data);
 });
