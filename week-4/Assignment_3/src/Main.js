@@ -25,10 +25,10 @@ export const Title = () => {
   );
 };
 
-export const Col = (data) => {
+export const Col = (props) => {
   return (
     <div className='row'>
-      {Object.values(data)[0].map((content, index) => (
+      {props.data.map((content, index) => (
         <div className='col' key={index}>
           <p>Content Box {content}</p>
         </div>
